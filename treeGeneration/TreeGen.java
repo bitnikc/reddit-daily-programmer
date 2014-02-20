@@ -7,7 +7,7 @@ public class TreeGen {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
-		System.out.print("Enter size, trunk symbol and leaves symbol.\n"
+		System.out.print("Enter width, trunk symbol and leaves symbol.\n"
 				+ "Seperate with spaces: ");
 		
 		Tree tree = new Tree(
@@ -18,6 +18,8 @@ public class TreeGen {
 		System.out.println();
 		
 		tree.drawTree();
+		
+		in.close();
 
 	}
 

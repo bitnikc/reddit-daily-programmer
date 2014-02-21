@@ -15,7 +15,7 @@ public class TreeGen {
 				in.next().charAt(0),	// trunk symbol
 				in.next().charAt(0));	// leaves symbol
 		
-		System.out.println();
+		System.out.println();			// empty line between tree and text
 		
 		tree.drawTree();
 		

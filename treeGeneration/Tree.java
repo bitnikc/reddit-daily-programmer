@@ -7,7 +7,7 @@ public class Tree {
 	char leaves;
 	
 	public Tree(int baseWidth, char trunk, char leaves) {
-		this.baseWidth = divisableByThree(baseWidth);
+		this.baseWidth = approvedNumber(baseWidth);
 		this.trunk = trunk;
 		this.leaves = leaves;
 	}
@@ -34,7 +34,7 @@ public class Tree {
 		for(int i=0;i<leaves;i++) System.out.print(this.leaves);
 	}
 	
-	private int divisableByThree(int number) {
+	private int approvedNumber(int number) {
 		if (number > 21) {
 			System.out.println("Width may not be larger than 21,\n"
 					+ "rounding down to 21.");
@@ -43,10 +43,13 @@ public class Tree {
 			if (number == 2)
 				System.out.println("Width must be divisable by three,\n"
 					+ "rounding up to 3.");
-			return divisableByThree(number+1);
+			return approvedNumber(number+1);
 		}
-		else
+		else {
+			if (number % 2 == 0)
+				System.out.println("The width needs to be odd, rounding down to " + --number);
 			return number;
+		}
 	}
 	
 }

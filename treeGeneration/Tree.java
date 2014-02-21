@@ -17,7 +17,7 @@ public class Tree {
 		for (int i = 1; i <= baseWidth; i+=2) {
 			if (baseWidth > i)
 				printSpaces((baseWidth-i)/2);
-			printLeaves(i);
+			for(int j=0;j<leaves;j++) System.out.print(this.leaves);
 			System.out.println();
 		}
 		
@@ -28,10 +28,6 @@ public class Tree {
 	
 	private void printSpaces(int spaces) {
 		for(int i = 0; i<spaces; i++) System.out.print(" ");
-	}
-	
-	private void printLeaves(int leaves) {
-		for(int i=0;i<leaves;i++) System.out.print(this.leaves);
 	}
 	
 	private int approvedNumber(int number) {

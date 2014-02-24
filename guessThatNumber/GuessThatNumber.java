@@ -10,10 +10,10 @@ public class GuessThatNumber {
 		
 		System.out.println("Welcome to guess-that-numbers game!\n"
 				+ "I have already picked a number in [1, 100].");
-		do {
+		while(!n1.isCorrect()) {
 			System.out.println(n1.guess(in.nextInt()));
 			in.nextLine();
-		} while(!n1.isCorrect());
+		}
 
 		in.close();
 	}

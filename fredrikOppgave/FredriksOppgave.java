@@ -24,6 +24,8 @@ public class FredriksOppgave {
 		
 		for(LetterOccurance l : letters)
 			System.out.println(l);
+		
+		in.close();
 	}
 
 }

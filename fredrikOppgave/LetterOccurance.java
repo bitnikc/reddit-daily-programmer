@@ -14,10 +14,6 @@ public class LetterOccurance implements Comparable<LetterOccurance> {
 		return occurance;
 	}
 
-	public void setOccurance(int occurance) {
-		this.occurance = occurance;
-	}
-
 	public char getLetter() {
 		return letter;
 	}

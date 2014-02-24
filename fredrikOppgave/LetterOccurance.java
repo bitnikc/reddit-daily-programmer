@@ -32,7 +32,7 @@ public class LetterOccurance implements Comparable<LetterOccurance> {
 	}
 	
 	public int compareTo(LetterOccurance compareLetters) {
-		return this.letter - compareLetters.getLetter();
+		return compareLetters.getOccurance() - this.occurance;
 	}
 
 }
